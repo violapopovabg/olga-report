@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Оля, аудит Instagram @olgamaslova_official</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1a1714; --graphite:#2a2622; --ivory:#f7f2ea; --paper:#fffdf9;
+    --gold:#b8924a; --gold-soft:#e9dcc2; --muted:#6f665c; --line:#e4dccf;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--ivory);color:var(--ink);
+    font:16px/1.6 "Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif}
+  h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+  a{color:var(--gold)}
+  .hero{background:var(--ink);color:var(--ivory);padding:56px 20px 48px;text-align:center}
+  .hero .label{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+  .hero h1{font-size:clamp(34px,7vw,56px);margin:14px 0 10px;letter-spacing:.02em}
+  .hero p{margin:0;color:#cfc6b8;font-size:14px}
+  .wrap{max-width:860px;margin:0 auto;padding:0 18px 64px}
+  nav.toc{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:-22px auto 28px;max-width:860px;padding:0 18px}
+  nav.toc a{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 14px;
+    font-size:12px;letter-spacing:.06em;text-decoration:none;color:var(--graphite);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+  section{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px 24px;margin:0 0 22px}
+  section h2{font-size:32px;margin-bottom:6px}
+  .kicker{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;display:block}
+  .lead{font-size:17px;color:var(--graphite);margin:10px 0 18px}
+  h3{font-size:22px;margin:24px 0 8px}
+  ul,ol{padding-left:22px;margin:8px 0}
+  li{margin:4px 0}
+  .prio{list-style:none;padding:0;counter-reset:p}
+  .prio li{counter-increment:p;position:relative;padding:14px 14px 14px 62px;margin:10px 0;
+    background:var(--ivory);border-radius:10px;border-left:3px solid var(--gold)}
+  .prio li::before{content:counter(p);position:absolute;left:18px;top:8px;
+    font-family:"Cormorant Garamond",serif;font-size:36px;color:var(--gold);font-weight:700}
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:12px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  td strong{color:var(--ink)}
+  tr.hl td{background:#fbf5e8}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0}
+  .stat{background:var(--ivory);border-radius:10px;padding:14px}
+  .stat b{display:block;font-family:"Cormorant Garamond",serif;font-size:30px;line-height:1}
+  .stat span{font-size:12px;color:var(--muted)}
+  .chart{margin:18px 0 6px}
+  .chart .title{font-family:"Cormorant Garamond",serif;font-size:22px;margin-bottom:4px}
+  .chart .sub{font-size:13px;color:var(--muted);margin-bottom:14px}
+  .bar{display:grid;grid-template-columns:120px 1fr 56px;align-items:center;gap:10px;margin:8px 0;font-size:14px}
+  .bar .track{height:16px;background:transparent}
+  .bar .fill{height:100%;background:#cbc3b5;border-radius:3px}
+  .bar.accent .fill{background:var(--gold)}
+  .bar.accent{font-weight:600}
+  .note{font-size:12px;color:var(--muted)}
+  .quote{font-family:"Cormorant Garamond",serif;font-size:24px;line-height:1.3;border-left:3px solid var(--gold);
+    padding:6px 0 6px 18px;margin:12px 0;color:var(--graphite)}
+  pre{background:var(--ink);color:var(--ivory);border-radius:10px;padding:14px 16px;overflow-x:auto;
+    font:13px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre-wrap;margin:10px 0}
+  code{background:var(--ivory);padding:1px 6px;border-radius:4px;font-size:13px}
+  .tpl-name{font-size:11px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin:18px 0 0;font-weight:600}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+  .tile{border-radius:10px;padding:16px 12px;text-align:center;min-height:120px;display:flex;flex-direction:column;justify-content:center}
+  .tile b{font-family:"Cormorant Garamond",serif;font-size:22px;display:block;margin-bottom:6px}
+  .tile span{font-size:12px;line-height:1.4}
+  .t-stage{background:var(--graphite);color:var(--ivory)}
+  .t-face{background:var(--gold);color:var(--ink)}
+  .t-info{background:var(--gold-soft);color:var(--ink)}
+  .palette{display:flex;border-radius:10px;overflow:hidden;height:44px;margin:10px 0 4px}
+  .palette div{display:flex;align-items:center;justify-content:center;font-size:11px;letter-spacing:.1em}
+  .checks{list-style:none;padding:0}
+  .checks li{padding:8px 0 8px 32px;position:relative;border-bottom:1px dashed var(--line)}
+  .checks li::before{content:"";position:absolute;left:4px;top:12px;width:14px;height:14px;border:1.5px solid var(--gold);border-radius:3px}
+  .checks input{position:absolute;left:2px;top:10px;width:18px;height:18px;opacity:0;cursor:pointer}
+  footer{text-align:center;color:var(--muted);font-size:12px;margin-top:30px}
+  @media (max-width:560px){
+    section{padding:22px 16px}
+    section h2{font-size:28px}
+    .bar{grid-template-columns:96px 1fr 48px;font-size:13px}
+    .tile{min-height:100px;padding:12px 8px}
+    .tile b{font-size:18px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="label">Instagram · @olgamaslova_official</div>
+  <h1>Оля, аудит твоего Instagram</h1>
+  <p>17 ноября 2026 · статистика за 90 дней</p>
+</header>
+
+<nav class="toc">
+  <a href="#main">Главное</a><a href="#numbers">Цифры</a><a href="#profile">Профиль</a>
+  <a href="#highlights">Хайлайты</a><a href="#grid">Сетка</a><a href="#captions">Подписи</a>
+  <a href="#reels">Рилсы</a><a href="#stories">Сторис</a><a href="#routine">Рутина</a><a href="#next">Шаги</a>
+</nav>
+
+<main class="wrap">
+
+<section id="main">
+  <span class="kicker">01</span>
+  <h2>Главное за минуту</h2>
+  <ol class="prio">
+    <li><strong>Обновить шапку профиля и закреп.</strong> В закрепе до сих пор написано «Artist of Ariosi Management Sagl». Его видит каждый театр и агент, который к тебе заходит.</li>
+    <li><strong>Сделать «у партитуры» еженедельной рубрикой.</strong> Рилс, где ты разбираешь ноты в камеру, привёл 62 подписчика и собрал 137 сохранений. Это лучший результат из всех.</li>
+    <li><strong>Сценические рилсы начинать сразу с голоса и крупного плана, а карусели со спектаклей выкладывать в соавторстве</strong> с театром, дирижёром и партнёрами. Соавторство даёт самый большой охват.</li>
+  </ol>
+</section>
+
+<section id="numbers">
+  <span class="kicker">02</span>
+  <h2>Что показывают цифры</h2>
+  <p class="lead">Больше всего подписчиков приводят твоё лицо и живая речь о музыке. Сцена даёт больше просмотров, но удерживает хуже.</p>
+
+  <div class="stats">
+    <div class="stat"><b>2 717</b><span>подписчиков</span></div>
+    <div class="stat"><b>+241</b><span>за 90 дней (+9,7%)</span></div>
+    <div class="stat"><b>18–21</b><span>пик активности, Вс · Пн · Чт</span></div>
+    <div class="stat"><b>66–84%</b><span>просмотров из ленты, от неподписанных</span></div>
+  </div>
+
+  <div class="table-wrap"><table>
+    <tr><th>Пост</th><th>Просмотры</th><th>Пропуск*</th><th>Ср. просмотр</th><th>Подписки</th><th>Сохранения</th></tr>
+    <tr class="hl"><td>Рилс: ты у партитуры</td><td>12 462</td><td>34%</td><td>17 с</td><td><strong>62</strong></td><td><strong>137</strong></td></tr>
+    <tr><td>Рилс: Турандот со сцены</td><td>14 683</td><td>47%</td><td>10 с</td><td>36</td><td>46</td></tr>
+    <tr><td>Рилс: бэкстейдж с бумагами</td><td>11 293</td><td>42%</td><td>9 с</td><td>9</td><td>13</td></tr>
+    <tr><td>Карусель: Турандот, sold out</td><td>26 263</td><td></td><td></td><td>25</td><td>44</td></tr>
+    <tr><td>Карусель: Турандот и Калаф</td><td>20 234</td><td></td><td></td><td>17</td><td>38</td></tr>
+  </table></div>
+  <p class="note">* Пропуск: зритель пролистал ролик в первые 3 секунды.</p>
+
+  <h3>Аудитория</h3>
+  <ul>
+    <li>Женщин и мужчин почти поровну: 55 и 45%.</li>
+    <li>Половине подписчиков от 25 до 44 лет, ещё 37% старше 45. Нужен спокойный умный тон и крупный текст на обложках.</li>
+    <li>Страны: Россия, Италия, Германия, Бразилия, США.</li>
+  </ul>
+
+  <div class="chart">
+    <div class="title">Английский читает только 13% аудитории</div>
+    <div class="sub">Русский и английский вместе: 36,8% подписчиков</div>
+    <div class="bar"><span>Русский</span><div class="track"><div class="fill" style="width:80%"></div></div><span>24%</span></div>
+    <div class="bar"><span>Итальянский</span><div class="track"><div class="fill" style="width:55.7%"></div></div><span>16,7%</span></div>
+    <div class="bar accent"><span>Английский</span><div class="track"><div class="fill" style="width:42.7%"></div></div><span>12,8%</span></div>
+    <div class="bar"><span>Испанский</span><div class="track"><div class="fill" style="width:35%"></div></div><span>10,5%</span></div>
+    <div class="bar"><span>Португальский</span><div class="track"><div class="fill" style="width:27%"></div></div><span>8,1%</span></div>
+    <p class="note">Доля подписчиков по языку, топ-5. Источник: статистика Instagram.</p>
+  </div>
+  <p>Итальянцы, вторая по размеру группа, читают подписи на чужом языке. Поэтому в разделе «Подписи» появляется третья строка на языке театра.</p>
+</section>
+
+<section id="profile">
+  <span class="kicker">03</span>
+  <h2>Профиль: имя, био, закрепы</h2>
+  <p class="lead">Шапка профиля не говорит, что и где ты поёшь сейчас, а второй закреп устарел.</p>
+
+  <h3>Что сейчас не так</h3>
+  <ul>
+    <li>Закреп «OLGA MASLOVA» (2 707 просмотров) по-прежнему указывает Ariosi Management.</li>
+    <li>«Opera singer | Soprano» в имени и «Opera Soprano» в био повторяют друг друга.</li>
+    <li>Строка «Official website ↓» занимает место: ссылка и так видна.</li>
+    <li>В био нет ни одной партии и ни одного театра.</li>
+    <li>Тег @mariinsky стоит и в био, и в закрепе. Оставлять его или нет, решаешь ты.</li>
+  </ul>
+
+  <h3>Позиционирование</h3>
+  <div class="quote">Ольга Маслова, сопрано. Турандот, Абигайль, Аида на сценах Вероны, Мюнхена, Барселоны. Показываю оперу изнутри: партитура, репетиции, сцена.</div>
+  <p>Вторая фраза взята из данных: именно такой контент приводит подписчиков.</p>
+
+  <h3>Новое имя и био</h3>
+  <p>Имя: <code>Olga Maslova | Soprano · Ольга Маслова</code>. Кириллица нужна, чтобы тебя находили через русский поиск.</p>
+<pre>Turandot · Abigaille · Aida · Lady Macbeth
+Verona · Munich · Barcelona · Seoul · São Paulo
+Opera from the inside · Опера изнутри
+Management: @gmartandmusic</pre>
+  <p class="note">Строку с агентством ставим, только если его уже можно указывать публично.</p>
+
+  <h3>Закрепы: ровно три</h3>
+  <p>Сейчас их два, и из-за этого вся сетка сдвинута на одну колонку.</p>
+  <ol>
+    <li>Новая визитка: партии и театры, без Ariosi.</li>
+    <li>Лучший рилс «у партитуры».</li>
+    <li>Сменный слот: ближайшая постановка, а между постановками карусель Турандот на 26 тыс. просмотров.</li>
+  </ol>
+  <p>«Season 11 Summary» переносим из закрепа в хайлайт SEASON.</p>
+</section>
+
+<section id="highlights">
+  <span class="kicker">04</span>
+  <h2>Хайлайты</h2>
+  <p class="lead">Обложки с песочными часами хорошие, их оставляем. Меняем порядок и добавляем то, что нужно новому зрителю: на экране телефона видно только первые 4–5 кружков.</p>
+
+  <div class="table-wrap"><table>
+    <tr><th>#</th><th>Хайлайт</th><th>Что внутри</th></tr>
+    <tr><td>1</td><td><strong>ABOUT</strong></td><td>Видео-знакомство на 30 секунд: голос, партии, сцены, сайт, агентство</td></tr>
+    <tr><td>2</td><td><strong>SEASON</strong></td><td>Ближайшие даты и билеты, обновлять 1-го числа</td></tr>
+    <tr><td>3</td><td><strong>TURANDOT</strong></td><td>Главная партия</td></tr>
+    <tr><td>4</td><td><strong>ABIGAILLE</strong></td><td></td></tr>
+    <tr><td>5</td><td><strong>AIDA</strong></td><td></td></tr>
+    <tr><td>6</td><td><strong>MACBETH</strong></td><td></td></tr>
+    <tr><td>7</td><td><strong>SCORE</strong></td><td>Рубрика «у партитуры»</td></tr>
+    <tr><td>8</td><td><strong>BACKSTAGE</strong></td><td>Репетиции, грим, день спектакля</td></tr>
+    <tr><td>9</td><td><strong>ASK OLGA</strong></td><td>Ответы на вопросы подписчиков</td></tr>
+    <tr><td>10</td><td><strong>PRESS</strong></td><td>Рецензии и интервью</td></tr>
+    <tr><td>11</td><td><strong>STAGES</strong></td><td>Карта театров, где ты пела</td></tr>
+    <tr><td>12</td><td><strong>MORE ROLES</strong></td><td>Гюльнара, Леонора, Эльвира, Лиза, Чио-Чио-сан</td></tr>
+  </table></div>
+  <p>Гюльнару (4 спектакля) лучше перенести в MORE ROLES, а не держать отдельным кружком перед Абигайль. Конкурсы отдельным хайлайтом не делаем: говорим о настоящем.</p>
+
+  <h3>Позже, когда наберётся контент</h3>
+  <ul>
+    <li>OPERA ABC: типы голосов, мифы, что посмотреть первым</li>
+    <li>WARM-UP: распевки как ремесло</li>
+    <li>ON TOUR: чемодан, города, дорога</li>
+    <li>FANS: подарки и письма зрителей (варенье, букет из зефира)</li>
+    <li>PARTNERS: дирижёры и коллеги</li>
+    <li>MEDIA: видео-интервью, радио, ТВ</li>
+    <li>ROOTS: Воронеж, Верхнее Турово, детство</li>
+    <li>SOON: новые партии, когда о них можно говорить</li>
+  </ul>
+  <p>Пустой хайлайт выглядит хуже, чем его отсутствие.</p>
+
+  <h3>Правила оформления</h3>
+  <ul>
+    <li>Названия до 9 символов: сейчас «ABIGAILLE» уже обрезается.</li>
+    <li>Цвет песочных часов по группам: роли в цвете партии, «изнутри» в одном нейтральном, PRESS и STAGES в золотом.</li>
+    <li>Первый слайд каждого хайлайта коротко говорит, что внутри, по-английски и по-русски.</li>
+    <li>Instagram переносит обновлённый хайлайт в начало ряда, поэтому обновляем их от последнего к первому.</li>
+  </ul>
+</section>
+
+<section id="grid">
+  <span class="kicker">05</span>
+  <h2>Сетка</h2>
+  <p class="lead">Сейчас сетка выглядит как набор разных афиш. Цель: чтобы новый человек за пять секунд понял: сопрано, главные сцены мира, опера изнутри.</p>
+
+  <h3>Что мешает</h3>
+  <ul>
+    <li>Тёмную гамму ломают красный CANCELLED, оранжевый чемодан и светлая обложка «Time for a Rehearsal».</li>
+    <li>На одном экране пять разных шрифтов.</li>
+    <li>Три плитки подряд без твоего лица (гардеробная, чемодан с нотами, мужской портрет).</li>
+    <li>Коллаж из пяти афиш на маленькой плитке не читается.</li>
+  </ul>
+
+  <h3>Паттерн: один ряд из трёх постов</h3>
+  <div class="grid3">
+    <div class="tile t-stage"><b>ON STAGE</b><span>фото или рилс со спектакля, в соавторстве</span></div>
+    <div class="tile t-face"><b>FACE</b><span>твоё лицо крупно: «у партитуры» или ответ на вопрос</span></div>
+    <div class="tile t-info"><b>INFO</b><span>карусель в фирменном шаблоне: афиша, OPERA ABC, пресса</span></div>
+  </div>
+  <p>Центральная колонка всегда твоё лицо. Новый пост встаёт в левый верхний угол, поэтому публикуем в обратном порядке: INFO, потом FACE, потом STAGE. Выкладываем тройками целиком, иначе ряды съедут.</p>
+
+  <h3>Цвет</h3>
+  <div class="palette">
+    <div style="flex:60;background:var(--ink);color:var(--ivory)">60% ЧЁРНЫЙ</div>
+    <div style="flex:30;background:var(--ivory);color:var(--ink);border:1px solid var(--line)">30% АЙВОРИ</div>
+    <div style="flex:10;background:var(--gold);color:var(--ink)">10%</div>
+  </div>
+  <ul>
+    <li>Золото как на обложках хайлайтов.</li>
+    <li>Цвет партии (красный Макбет, зелёный Гюльнара) только в мелких деталях, не заливкой.</li>
+    <li>Фото со сцены в цвете с тёплой цветокоррекцией, портреты можно в ч/б.</li>
+    <li>Никаких ярких плашек поверх твоего лица.</li>
+  </ul>
+
+  <h3>Шрифты (оба с кириллицей, есть в Canva)</h3>
+  <p style="font-family:'Cormorant Garamond',serif;font-size:26px;margin:6px 0">TURANDOT · Как поёт сопрано</p>
+  <p style="font-size:12px;letter-spacing:.24em;text-transform:uppercase;margin:0 0 8px">Score · Teatro · Verona · 23.09</p>
+  <ul>
+    <li>Cormorant Garamond, капс: заголовки</li>
+    <li>Montserrat, капс с разрядкой: рубрика, театр, город, даты</li>
+    <li>Монограмма OM только как логотип</li>
+  </ul>
+
+  <h3>Шаблон обложки</h3>
+  <ul>
+    <li>Рилс 1080×1920, всё важное в центральной зоне 3:4. Карусель 1080×1440.</li>
+    <li>Лицо в верхней или средней трети, внизу мягкий тёмный градиент.</li>
+    <li>Заголовок 1–3 слова, над ним золотая метка рубрики: SCORE, ON STAGE, SEASON, OPERA ABC, ASK OLGA, PRESS.</li>
+    <li>Не больше пяти слов на обложке.</li>
+    <li>Афиши театров в рамке на тёмном фоне с подписью «театр · город · даты».</li>
+  </ul>
+
+  <h3>Следующие 12 постов (порядок публикации)</h3>
+  <p>До старта: три закрепа, архив CANCELLED после 22 ноября и коллажа из афиш, новые обложки старых рилсов, где это возможно.</p>
+  <div class="table-wrap"><table>
+    <tr><th>#</th><th>Тип</th><th>Пост</th></tr>
+    <tr><td>1</td><td>INFO</td><td>Карта сцен мира</td></tr>
+    <tr><td>2</td><td>FACE</td><td>«У партитуры» №1, Турандот</td></tr>
+    <tr><td>3</td><td>STAGE</td><td>Аида в Liceu, карусель в соавторстве</td></tr>
+    <tr><td>4</td><td>INFO</td><td>OPERA ABC: какие бывают сопрано</td></tr>
+    <tr><td>5</td><td>FACE</td><td>ASK OLGA</td></tr>
+    <tr><td>6</td><td>STAGE</td><td>Абигайль в Вероне, архив</td></tr>
+    <tr><td>7</td><td>INFO</td><td>SEASON, декабрь (пост 1-го числа)</td></tr>
+    <tr><td>8</td><td>FACE</td><td>«У партитуры» №2</td></tr>
+    <tr><td>9</td><td>STAGE</td><td>Рилс Турандот, который начинается с верхней ноты</td></tr>
+    <tr><td>10</td><td>INFO</td><td>PRESS: цитата из рецензии</td></tr>
+    <tr><td>11</td><td>FACE</td><td>Грим и парик перед спектаклем</td></tr>
+    <tr><td>12</td><td>STAGE</td><td>Леди Макбет, Сан-Паулу, архив</td></tr>
+  </table></div>
+</section>
+
+<section id="captions">
+  <span class="kicker">06</span>
+  <h2>Подписи</h2>
+  <p class="lead">Подписи остаются в твоём голосе: от первого лица, коротко, тепло, без пафоса и без длинных тире. Меняется структура и языки.</p>
+
+  <p><strong>Языки.</strong> Сначала английский, потом русский. Новое правило: <strong>третья строка на языке театра</strong>, одна короткая фраза или благодарность: итальянский для Вероны и Флоренции, испанский для Liceu и Валенсии, португальский для Сан-Паулу, немецкий для Мюнхена и Кёльна.</p>
+  <p><strong>Первая строка.</strong> До слов «ещё» видно около 125 символов. Формула: конкретная деталь плюс неожиданный поворот. Лучше всего работают имена, названия опер и числа: их понимают и в Милане, и в Москве, и в Сан-Паулу. Например: «Turandot. Act II. 4 notes.» Не начинать с «Happy to share» или названия театра.</p>
+
+  <h3>Структура истории</h3>
+  <ol>
+    <li>Крючок: одна строка</li>
+    <li>Момент: что происходит, 1–2 предложения</li>
+    <li>Деталь, которую знаешь только ты: нота, жест, совет дирижёра</li>
+    <li>Смысл: что это для тебя, одно предложение</li>
+    <li>Вопрос в комментарии</li>
+    <li>Отметки и хештеги</li>
+  </ol>
+
+  <p><strong>Финальный вопрос.</strong> Конкретный, про личный опыт зрителя, с ответом в одно слово: «Какую оперу вы увидели первой?», «В каком театре вы хотели бы меня услышать?». Не «Что думаете?».</p>
+
+  <h3>Хештеги: 3–5 на пост</h3>
+  <ul>
+    <li>Всегда: <code>#OlgaMaslova #soprano #opera</code></li>
+    <li>Партия: <code>#Turandot #Nabucco #Aida #Macbeth</code></li>
+    <li>Язык страны спектакля: <code>#lirica</code> (Италия), <code>#ópera</code> (Испания, Бразилия), <code>#Oper</code> (Германия), <code>#опера</code></li>
+    <li>Рубрика: <code>#MaslovaScore</code></li>
+  </ul>
+
+  <h3>Расписание: публикации в 18:00</h3>
+  <div class="table-wrap"><table>
+    <tr><th>День</th><th>Рубрика</th></tr>
+    <tr class="hl"><td>Пн ★</td><td>SCORE: главный формат</td></tr>
+    <tr><td>Вт</td><td>OPERA ABC</td></tr>
+    <tr class="hl"><td>Чт ★</td><td>ON STAGE: спектакль в соавторстве</td></tr>
+    <tr><td>Пт</td><td>BACKSTAGE / ON TOUR</td></tr>
+    <tr class="hl"><td>Вс ★</td><td>ASK OLGA: больше всего комментариев</td></tr>
+  </table></div>
+  <p>Раз в месяц, 1-го числа, добавляется SEASON: даты, театры, ссылка на билеты.</p>
+
+  <h3>Пять шаблонов</h3>
+  <div class="tpl-name">On stage</div>
+<pre>[Деталь сцены одной строкой].
+[Партия] in [опера], [театр], [город]. [Что происходит в этот момент].
+With [полное имя дирижёра], [полные имена партнёров].
+[Одна фраза на языке театра].
+
+[Та же деталь по-русски]. [1–2 предложения о моменте].
+[Вопрос]</pre>
+  <div class="tpl-name">Score</div>
+<pre>This bar looks simple. It is not.
+[Что в нём происходит: нота, дыхание, слово].
+
+Этот такт выглядит просто. [Что в нём на самом деле].
+Какой фрагмент разобрать следующим?
+#MaslovaScore</pre>
+  <div class="tpl-name">Opera ABC</div>
+<pre>[Миф или вопрос], answered in 5 slides.
+[Одна фраза, зачем это знать].
+
+[Тот же вопрос по-русски]: разбираю в пяти слайдах.
+Сохраните, чтобы вернуться перед первой оперой.</pre>
+  <div class="tpl-name">Ask Olga</div>
+<pre>You asked: «[вопрос]».
+[Короткий честный ответ от первого лица].
+
+Вы спросили: «[вопрос]». [Ответ].
+Задайте свой вопрос в комментариях, отвечу в следующем выпуске.</pre>
+  <div class="tpl-name">Backstage / On tour</div>
+<pre>[Число или предмет]: [что это].
+[Где ты и что делаешь, 1–2 предложения].
+
+[По-русски, 1–2 предложения].
+А что вы всегда берёте с собой в поездку?</pre>
+</section>
+
+<section id="reels">
+  <span class="kicker">07</span>
+  <h2>Рилсы: хуки</h2>
+  <p class="lead">Первым снимаем «у партитуры» с тактом из Турандот: формат уже доказан, и в новой версии ты поёшь уже на 4-й секунде. Выкладываем в понедельник в 18:00 и закрепляем.</p>
+
+  <p><strong>Почему уходят зрители.</strong> Рилс у партитуры открывается твоим лицом и взглядом в камеру, и его пролистывают реже всего (34%). Рилс со сцены начинается общим планом и теряет 47%. Бэкстейдж без лица и контекста теряет 42%.</p>
+
+  <h3>Правила темпа</h3>
+  <ul>
+    <li>В первом кадре твоё лицо или голос, никаких заставок</li>
+    <li>Текст на экране до 6 слов, крупно, в верхней трети</li>
+    <li>Субтитры всегда: многие смотрят без звука</li>
+    <li>Склейка каждые 2–3 секунды</li>
+    <li>Кульминация на 3–5 секунде, а не в финале</li>
+    <li>Длина 15–25 секунд, конец зациклен с началом</li>
+  </ul>
+
+  <h3>Десять хуков</h3>
+  <div class="table-wrap"><table>
+    <tr><th>#</th><th>Первая строка</th><th>Текст на экране</th><th>Первый кадр</th><th>Темп</th></tr>
+    <tr class="hl"><td>1</td><td>Этот такт выглядит просто. Это не так</td><td>This bar looks easy. It isn't.</td><td>Макро на палец на ноте, отъезд на лицо</td><td>Поёшь такт на 4-й секунде, потом объясняешь</td></tr>
+    <tr><td>2</td><td>Самая высокая нота в моей Турандот</td><td>Turandot's highest note</td><td>Крупный план со сцены прямо на ноте</td><td>Нота с 0-й секунды, дальше рассказ у зеркала</td></tr>
+    <tr><td>3</td><td>Одна фраза: репетиционный зал и Арена ди Верона</td><td>Same phrase. Two worlds.</td><td>Разделённый экран: репетиция и Абигайль на сцене</td><td>Синхронно, на 6-й секунде остаётся сцена</td></tr>
+    <tr><td>4</td><td>[X] минут от Ольги до Турандот</td><td>From Olga to Turandot</td><td>Лицо без грима в зеркале, в углу таймер</td><td>Быстрые склейки, готовый образ на 7-й секунде</td></tr>
+    <tr><td>5</td><td>Этот костюм весит [X] кг. Я пою в нём три часа</td><td>[X] kg. 3 hours. Full voice.</td><td>Твоя рука поднимает костюм с вешалки</td><td>Сразу кадр со сцены в этом костюме</td></tr>
+    <tr><td>6</td><td>Нет, оперные певцы не разбивают бокалы голосом</td><td>Myth: we break glasses</td><td>Ты с бокалом и улыбкой в камеру</td><td>Пауза, улыбка, потом «что мы делаем на самом деле»</td></tr>
+    <tr><td>7</td><td>Все ненавидят Абигайль. А я нет</td><td>Everyone hates Abigaille. I don't.</td><td>Крупный план Абигайль, взгляд в зал</td><td>2 секунды сцены, потом ты в камеру про симпатию к злодейкам</td></tr>
+    <tr><td>8</td><td>Три страны за [X] дней. Всё в одном чемодане</td><td>[X] days. 3 countries. 1 suitcase.</td><td>Открытый чемодан сверху, руки достают партитуру</td><td>По предмету в секунду, на 6-й аэропорт или сцена</td></tr>
+    <tr><td>9</td><td>Лучший подарок от зрителя: банка малинового варенья</td><td>Best gift from a fan</td><td>Банка в твоих руках, за ней улыбка</td><td>Медленнее остальных, история на 15 секунд</td></tr>
+    <tr><td>10</td><td>Назовите город, а я скажу, пела ли я там</td><td>Name a city. Did I sing there?</td><td>Ты перед картой с отметками театров</td><td>Три быстрых ответа (Верона, Сеул, Сан-Паулу) и призыв написать свой</td></tr>
+  </table></div>
+  <p>Хук №2 можно смонтировать уже сейчас из архивного видео Турандот, без новой съёмки.</p>
+</section>
+
+<section id="stories">
+  <span class="kicker">08</span>
+  <h2>Сторис: неделя</h2>
+  <p class="lead">За неделю сторис ведут зрителя от случайного просмотра к сообщению тебе. Повод написать: «Напишите свой город, и вы узнаете первыми, когда я буду петь рядом».</p>
+  <p>Это выгодно сразу троим: зритель получает пользу, сообщения в директ расширяют охват, а у тебя появляется карта городов, где тебя ждут. Эта карта пригодится и агентству. Тех, кто написал, добавляем в «Близкие друзья» и показываем им анонсы раньше всех.</p>
+
+  <h3>Последовательность: 3–5 сторис в день около 18:00</h3>
+  <div class="table-wrap"><table>
+    <tr><th>День</th><th>Задача</th><th>Что публикуем</th></tr>
+    <tr><td>Пн</td><td>Зацепить</td><td>Кадр из нового рилса со ссылкой; опрос «Читаете ноты?»; шкала «Насколько сложной кажется опера?»</td></tr>
+    <tr><td>Вт</td><td>Научить</td><td>Квиз «На каком языке поётся Турандот?»; квиз «Кто дописал Турандот после Пуччини?» (Альфано); твой ответ в камеру</td></tr>
+    <tr><td>Ср</td><td>Приблизить</td><td>Партитура с пометками; 5 секунд распевки; опрос «Больше закулисья?»</td></tr>
+    <tr><td>Чт</td><td>Эмоция</td><td>Фото со сцены; «Что я чувствую за минуту до выхода»; вопрос «Какую оперу вы увидели первой?»</td></tr>
+    <tr><td>Пт</td><td>Твоя жизнь</td><td>Чемодан и дорога; квиз «В каком городе я не пела?»; слайдер «Хотите увидеть мой день перед спектаклем?»</td></tr>
+    <tr class="hl"><td>Сб</td><td>Мягкий оффер</td><td>Карта театров; кадр с оффером про город; твоё лицо и подпись «Reply to this story»</td></tr>
+    <tr><td>Вс</td><td>Ответить</td><td>Ответы недели (без имён или с разрешения); 2–3 ответа в камеру; повтор оффера; окно вопросов</td></tr>
+  </table></div>
+
+  <p><strong>Слот для бэкстейджа.</strong> Каждый день один кадр около 13:00: партитура, грим, дорога, зал. Среда целиком отдана закулисью.</p>
+
+  <h3>Кадр с оффером</h3>
+<pre>Want to know first when I sing near you? Send me your city 📍
+Хотите узнать первыми, когда я буду петь в вашем городе? Напишите мне его название 📍</pre>
+
+  <h3>Скрипты ответа</h3>
+  <div class="tpl-name">Город</div>
+<pre>Спасибо! Записала: [город] 📍 Как только появится спектакль рядом, вы узнаете первыми.
+Thank you! [City] is on my list 📍 You'll be the first to know when I sing nearby.</pre>
+  <div class="tpl-name">Вопрос</div>
+<pre>Какой хороший вопрос. Отвечу в воскресенье в сторис 🎼
+Great question. I'll answer it on Sunday in my stories 🎼</pre>
+  <div class="tpl-name">Билеты</div>
+<pre>Ссылка на билеты: [ссылка]. Буду рада видеть вас в зале.
+Here is the link: [link]. Hope to see you there.</pre>
+  <p>На итальянском, испанском или португальском отвечаем на языке зрителя, одной-двумя фразами. Отвечаем в тот же вечер, а города записываем в общий список.</p>
+</section>
+
+<section id="routine">
+  <span class="kicker">09</span>
+  <h2>Ежедневное вовлечение и обзор</h2>
+  <p class="lead">20 минут в день вокруг публикации в 18:00. Аккаунт оперной певицы растёт не через хештеги, а через соседние сообщества: подписчиков театров, дирижёров и партнёров по сцене.</p>
+
+  <div class="table-wrap"><table>
+    <tr><th>Время</th><th>Минут</th><th>Что делать</th></tr>
+    <tr><td>17:45</td><td>8</td><td>5 содержательных комментариев по списку на день</td></tr>
+    <tr class="hl"><td>18:00</td><td></td><td>Публикация</td></tr>
+    <tr><td>18:00–18:10</td><td>10</td><td>Ответы под новым постом, на сторис и в директе</td></tr>
+    <tr><td>21:00</td><td>2</td><td>Поздние комментарии и сообщения</td></tr>
+  </table></div>
+
+  <h3>С кем взаимодействовать</h3>
+  <div class="table-wrap"><table>
+    <tr><th>День</th><th>Аккаунты</th></tr>
+    <tr><td>Пн, Италия</td><td>Arena di Verona, Teatro del Maggio Musicale Fiorentino, Sferisterio di Macerata, Teatro Verdi Trieste, Festival Puccini Torre del Lago, Teatro Carlo Felice</td></tr>
+    <tr><td>Вт, Германия</td><td>Bayerische Staatsoper, Oper Köln, Deutsche Oper am Rhein</td></tr>
+    <tr><td>Ср, русскоязычные</td><td>Большой театр, Хибла Герзмава, оперные сообщества на русском</td></tr>
+    <tr><td>Чт, Испания и Бразилия</td><td>Gran Teatre del Liceu, Les Arts Valencia, Theatro Municipal de São Paulo</td></tr>
+    <tr><td>Пт, коллеги</td><td>Giacomo Sagripanti, Marco Armiliato, Antonino Fogliani, Roberto Alagna, Ivan Gyngazov, Anna Pirozzi, Plácido Domingo</td></tr>
+    <tr><td>Сб–Вс, зрители</td><td>Те, кто комментирует тебя; оперные медиа и фан-страницы</td></tr>
+  </table></div>
+  <p class="note">Никнеймы нужно проверить перед стартом. Каждый день пять аккаунтов: три профессиональных и два зрительских.</p>
+
+  <h3>Стили комментариев (от первого лица, на языке аккаунта)</h3>
+  <ul>
+    <li>Конкретный момент: «The trio in Act II: this lighting is pure magic.»</li>
+    <li>Коллеге: «Caro Giacomo, che serata!» Полное имя, тепло, без превосходных степеней.</li>
+    <li>Знание: короткий взгляд изнутри к посту театра.</li>
+    <li>Вопрос: «Which production is next on this stage?»</li>
+    <li>Зрителю: ответ на его пост об опере.</li>
+  </ul>
+  <p>Без комментариев из одних эмодзи, рекламы себя, сравнения коллег или театров и критики постановок.</p>
+
+  <h3>Ответы под твоими постами</h3>
+  <ul>
+    <li>Первый час отвечаем на каждый комментарий: одна живая фраза и встречный вопрос.</li>
+    <li>На языке комментатора.</li>
+    <li>Закрепляем лучший комментарий.</li>
+    <li>Вопросы складываем для воскресного ASK OLGA.</li>
+    <li>Негатив скрываем и не отвечаем.</li>
+  </ul>
+
+  <h3>Еженедельный обзор: воскресенье, 15 минут</h3>
+  <div class="table-wrap"><table>
+    <tr><th>Что смотрим</th><th>Что решаем</th></tr>
+    <tr><td>Чистый прирост подписчиков</td><td>Вышли ли из плато</td></tr>
+    <tr><td>Пост недели по подпискам и сохранениям</td><td>Повторить формат</td></tr>
+    <tr><td>Доля пропусков рилсов</td><td>Выше 40%: переписать хук</td></tr>
+    <tr><td>Ответы на сторис и сообщения</td><td>Сколько городов собрали</td></tr>
+    <tr><td>Откуда пришли новые подписчики</td><td>Добавить работающие аккаунты в список</td></tr>
+  </table></div>
+  <p>Итог обзора: один вывод и одно изменение на следующую неделю.</p>
+</section>
+
+<section id="next">
+  <span class="kicker">10</span>
+  <h2>Что нужно решить тебе и следующие шаги</h2>
+  <p class="lead">Оля, чтобы стартовать, мне нужны твои ответы на четыре вопроса.</p>
+  <ol>
+    <li><strong>Тег @mariinsky</strong> в био и в визитке: оставляем или убираем?</li>
+    <li><strong>Агентство @gmartandmusic</strong>: можно уже указывать публично?</li>
+    <li><strong>Рубрика «у партитуры»</strong>: готова записывать по одному видео в неделю? И с какого фрагмента Турандот начинаем?</li>
+    <li><strong>Цифры для хуков</strong>: сколько длится грим Турандот и сколько весит костюм? Эти числа нужны для рилсов №4 и №5.</li>
+  </ol>
+
+  <h3>План на ближайшие две недели</h3>
+  <ul class="checks">
+    <li><input type="checkbox" aria-label="готово">Заменить визитку с Ariosi и обновить имя и био</li>
+    <li><input type="checkbox" aria-label="готово">Поставить три закрепа</li>
+    <li><input type="checkbox" aria-label="готово">Пересобрать хайлайты: ABOUT, SEASON, новый порядок, MORE ROLES</li>
+    <li><input type="checkbox" aria-label="готово">Собрать шаблон обложки в Canva (Cormorant Garamond + Montserrat, стиль «часики»)</li>
+    <li><input type="checkbox" aria-label="готово">Смонтировать рилс Турандот, который начинается с верхней ноты (из архива)</li>
+    <li><input type="checkbox" aria-label="готово">Записать «у партитуры» №1 и выложить в понедельник в 18:00</li>
+    <li><input type="checkbox" aria-label="готово">Архивировать CANCELLED после 22 ноября и коллаж из афиш</li>
+    <li><input type="checkbox" aria-label="готово">Запустить неделю сторис с оффером про город</li>
+    <li><input type="checkbox" aria-label="готово">Через неделю первый обзор цифр и поправки</li>
+  </ul>
+</section>
+
+<footer>Подготовлено для Ольги Масловой · ноябрь 2026</footer>
+</main>
+
+<script>
+  document.querySelectorAll('.checks input').forEach(function(cb){
+    cb.addEventListener('change',function(){
+      var li=cb.parentElement;
+      li.style.textDecoration=cb.checked?'line-through':'none';
+      li.style.color=cb.checked?'#9a9187':'';
+    });
+  });
+</script>
+</body>
+</html>
